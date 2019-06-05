@@ -1,0 +1,25 @@
+
+ <!-- <wxs module="filter" src="../utils/numbercount.wxs"></wxs> -->
+<view class='navigationline'></view>
+<view style='{{showshare? "filter: blur(9rpx);-webkit-filter: blur(9rpx);":""}};margin-top:8rpx;'>
+	<view class="videoBox_list" >
+
+    	<video src="{{videosrc}}" wx:if="{{playIndex!=null  && !playshow}}" id="myVideo" bindended="end"  bindplay="hplay"  show-center-play-btn="true"  style="display:{{play?'none':'block'}};top:{{572*playIndex +90}}rpx" bindtimeupdate="update" autoplay="{{autoplay}}" class='video-sss'></video> 
+
+		<view class='videoBox' wx:for="{{videos}}"  wx:for-item="item" wx:key="{{index}}" > 
+      <view class='cover-view-pause' >{{item.coursename}}</view>
+			<view  class='videoBox_item'>
+				<view class='cover-view' style="display:{{playIndex == index && !playshow? 'none' : 'flex' }};"> 
+					<image src='{{item.thumb}}' mode='aspectFill'  class="cover_view_fm"></image>
+					<image src="../images/playvideo.png" mode='aspectFill'  style="display: {{playIndex == index? 'none' : 'flex' }};" class='play' id="myVideo-{{index}}"  data-playIndex="{{playIndex}}" data-videosrc="{{item.video}}"  data-videoid="{{item.id}}" bindtap='playvideo' data-index="{{index}}" data-videonum="{{item.readnum}}"/>
+				</view>
+				<view class="bfl_view" style="display: {{playIndex == index ? 'none' : 'flex' }};">
+				</view>
+				
+			</view>
+			<view class="group_operate">
+
+			</view>
+		</view>
+	</view>
+	</view>

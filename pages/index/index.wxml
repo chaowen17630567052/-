@@ -1,0 +1,24 @@
+<view class='top'>
+<view class='b-a'>
+<view class='top-a'>
+  <text>一 【永泰亚洲·宫园巧筑】 一</text>
+  <text>☆从新加坡，到上海 </text>
+  <text>☆两座城市气韵，一种花园梦想</text>
+  <text>☆美兰湖大道，一隅芬芳地 </text>
+  <text>☆USGA高尔夫球场环伺</text>
+            
+  </view>
+  <view class='top-b'bindtap='copyText'data-text="{{contents}}">
+  <text>点</text>
+  <text>击</text>
+  <text>复</text>
+  <text>制</text>
+  </view>
+  </view>
+</view>
+ <view class='save-box'>
+<view class='img-box'  wx:for="{{imgUrl}}" wx:key="{{item}}">
+    <image src='{{item}}'  bindtap='viewImage' data-src="{{item}}" data-src='{{item}}' mode='widthFix' style='margin-bottom:10rpx;'></image>
+    <button bindtap='saveImgToPhotosAlbumTap' data-src="{{item}}">保存海报至相册</button>
+    </view>
+</view>

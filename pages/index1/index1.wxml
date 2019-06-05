@@ -1,0 +1,8 @@
+<view class='container'>
+<view class='photo'>
+<view class='img-box'  wx:for="{{imgUrl}}" wx:key="{{item}}">
+    <image src='{{item}}'  bindtap='viewImage' data-src="{{item}}" data-src='{{item}}' mode='widthFix' style='margin-bottom:10rpx;'></image>
+    <button bindtap='saveImgToPhotosAlbumTap' data-src="{{item}}">保存图片至相册</button>
+    </view>
+</view>
+</view>

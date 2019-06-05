@@ -1,0 +1,88 @@
+/* pages/index1/index1.wxss */
+.photo{
+ display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.save-box {
+  margin: 0 15px;
+}
+
+.save-box image {
+  width: 100%;
+}
+
+.save-pic .title {
+  padding-left: 12rpx;
+  border-left: 8rpx solid #fc0;
+  font-size: 32rpx;
+  color: #333;
+  font-weight: 600;
+}
+
+.line {
+  margin-top: 5px;
+  margin-bottom: 20rpx;
+  height: 1px;
+  background: #eee;
+  width: 100%;
+}
+
+button {
+  margin: 5rpx auto;
+  background: none;
+  font-size: 23rpx;
+  border-radius: 20rpx;
+  border: 1px solid rgba(255, 184, 80, 1);
+  width: 35%;
+}
+
+button::after {
+  border: none;
+}
+
+.copy-box {
+  margin: 20rpx 30rpx;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.copy-text {
+  padding: 20rpx;
+  font-size: 30rpx;
+  line-height: 48rpx;
+  border: 1px solid rgba(255, 184, 80, 1);
+  border-radius: 20rpx;
+  height: 180rpx;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.copy-text text {
+  display: block;
+}
+
+.copy-btn {
+  margin-left: 30rpx;
+  padding: 20rpx;
+  width: 40rpx;
+  font-size: 32rpx;
+  border: 1px solid rgba(255, 184, 80, 1);
+  border-radius: 20rpx;
+  text-align: center;
+  height: 180rpx;
+}
+.img-box {
+  position: relative;
+}
+.img-box button {
+  position: absolute;
+  right: 20rpx;
+  top: 10rpx;
+  background: #fff;
+  box-shadow: 0 0 10rpx rgba(0,0,0,.1);
+  border:none;
+}
